@@ -28,6 +28,7 @@ img{
 
 .contenedor{
     max-width: 120rem;
+    width: 90%;
     margin:0 auto;
 }
 
@@ -41,6 +42,7 @@ h1{
 
 h2{
     font-size: 4rem;
+
 }
 
 h3{
@@ -62,6 +64,31 @@ h4{
     margin:0;
 }
 
+
+/*botones*/
+
+.btn{
+ display: block;
+ text-align: center;
+ padding: 1rem 3rem;
+ color: white;
+ font-family:  'PT Sans', sans-serif;
+ font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .btn{
+        display: inline-block;  
+    }
+}
+
+.btn-primario{
+    background-color: black;
+}
+
+.btn-segundario{
+    background-color: #784d3c
+}
 
 
 /**header**/
@@ -139,13 +166,62 @@ h4{
 
 .contenido-principal{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.blog{
-    flex-basis: 60%;
+.blog,
+.clases {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+/*con este atributo cambiamos la posicion de la clase 
+siempre y cuando usemos flexbox*/
+.clases{
+    order: -1;
 }
 
-.cursos{
-    flex-basis: calc(40% - 1rem);
+@media (min-width: 768px) {
+    .contenido-principal{
+        justify-content: space-between;
+    }
+
+    .blog{
+        flex-basis: 60%;
+        order: -1;
+    }
+
+    .clases{
+        flex-basis: calc(40% - 3rem)
+    }  
+}
+
+/* opcional*/
+
+.entrada-blog{
+    margin-bottom: 5rem;
+}
+
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+
+/*aside*/
+
+.curso-lista{
+    padding: 0;
+    list-style: none;
+}
+
+.curso{
+    padding-bottom: 3rem;
+}
+
+.curso p{ 
+    font-family:  'PT Sans', sans-serif;
+    font-weight: 700;
+}
+
+.curso p span{
+    font-weight: 400;
 }
