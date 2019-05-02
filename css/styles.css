@@ -129,6 +129,7 @@ h4{
     display: block;
     text-align: center;
     font-size: 1.8rem;
+    color: white;
 }
 
 /*los media query son recomendables hacerlos. justo cerca a la lidea de ccs*/
@@ -224,4 +225,25 @@ siempre y cuando usemos flexbox*/
 
 .curso p span{
     font-weight: 400;
+}
+
+/**footer**/
+
+.site-footer{
+    background-color: black;
+    padding: 3rem;
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+}
+
+
+.site-footer p {
+    font-size: 3rem;
+    font-family:  'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.site-footer p span{
+    font-weight: 700;
 }
