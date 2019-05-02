@@ -32,6 +32,11 @@ img{
     margin:0 auto;
 }
 
+.seccion{
+    margin: 2rem 0;
+}
+
+
 h1, h2, h3,h4{
     font-family:  'PT Sans', sans-serif;
 }
@@ -62,6 +67,20 @@ h4{
 
 .no-margin{
     margin:0;
+}
+
+/*grid*/
+
+@media (min-width: 768px) {
+    .grid{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    .columnas-6{
+        flex:0 0 calc(50% - 2rem)
+    }
 }
 
 
@@ -231,7 +250,7 @@ siempre y cuando usemos flexbox*/
 
 .site-footer{
     background-color: black;
-    padding: 3rem;
+    padding: 2.5rem;
     margin-top: 4rem;
     color: white;
     text-align: center;
@@ -248,3 +267,12 @@ siempre y cuando usemos flexbox*/
 .site-footer p span{
     font-weight: 700;
 }
+
+
+/*otras paginas*/
+
+
+/***nosotros**/
+
+
+
