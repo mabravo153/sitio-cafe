@@ -81,6 +81,14 @@ h4{
     .columnas-6{
         flex:0 0 calc(50% - 2rem)
     }
+
+    .columnas-8{
+        flex: 0 0 66.6%    
+    }
+
+    .columnas-4{
+        flex: 0 0 calc(33.3% - 2rem); 
+    }
 }
 
 
@@ -242,6 +250,12 @@ siempre y cuando usemos flexbox*/
     font-weight: 700;
 }
 
+
+.curso p.parrafo-curso{
+    font-family:  'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
 .curso p span{
     font-weight: 400;
 }
@@ -272,7 +286,8 @@ siempre y cuando usemos flexbox*/
 /*otras paginas*/
 
 
-/***nosotros**/
+/**nosotros**/ 
 
 
+/**cursos**/
 
