@@ -301,7 +301,7 @@ siempre y cuando usemos flexbox*/
 
 .formulario-contacto{
     background-color: white;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -321,7 +321,7 @@ siempre y cuando usemos flexbox*/
 }
 
 .formulario-contacto .campo label{
-    flex: 0 0 8rem;
+    flex: 0 0 6rem;
     font-family:  'PT Sans', sans-serif;
     font-weight: 700;
 }
