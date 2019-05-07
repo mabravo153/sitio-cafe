@@ -335,7 +335,14 @@ siempre y cuando usemos flexbox*/
 
 
 
+
 .formulario-contacto .enviar{
    display: flex;
-   justify-content: flex-end;
+   justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto .enviar{
+        justify-content: flex-end;
+     }
 }
